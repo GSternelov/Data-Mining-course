@@ -1,0 +1,357 @@
+P ;First name;Last name;Born ;Height ;Weight ;Contract ;Team
+GK;Kyriakos;Stamatopoulos;1979-08-28;188;80;2017-11-30;AIK
+GK;Lee;Baxter;1976-06-17;187;87;;AIK
+GK;Patrik;Carlgren;1992-01-08;188;84;2016-11-30;AIK
+D;Alexander;Milosevic;1992-01-30;191;80;2018-06-30;AIK
+D;Edward;Owusu;1994-01-13;184;79;2017-11-30;AIK
+D;Martin;Lorentzson;1984-07-21;179;72;2016-06-30;AIK
+D;Nils-Eric;Johansson;1980-01-13;187;88;2017-11-30;AIK
+D;Noah;Sonko-Sundberg;1996-06-06;188;83;2016-11-30;AIK
+D;Per;Karlsson;1986-01-02;184;81;2017-11-30;AIK
+D;Sauli;Väisänen;1994-06-05;191;79;2017-12-31;AIK
+M;Anton;Salétros;1996-04-12;183;73;2016-07-31;AIK
+M;Celso;Borges;1988-05-27;186;75;2017-06-30;AIK
+M;Ebenezer;Ofori;1995-07-01;172;69;2017-11-30;AIK
+M;Gabriel;Ferreyra;1994-02-03;182;77;2018-11-30;AIK
+M;Ibrahim;Moro;1993-11-10;177;71;;AIK
+M;Kenny;Pavey;1979-08-23;178;77;2016-11-30;AIK
+M;Lalawele;Atakora;1990-11-09;168;62;;AIK
+M;Marko;Nikolic;1997-09-17;183;73;2016-11-30;AIK
+M;Nabil;Bahoui;1991-02-05;188;85;2018-06-30;AIK
+M;Nicklas;Maripuu;1992-03-02;188;82;2016-11-30;AIK
+M;Niclas;Eliasson;1995-12-07;178;66;2017-11-30;AIK
+M;Panajotis;Dimitriadis;1986-08-12;182;78;2018-11-30;AIK
+M;Robin;Quaison;1993-10-09;180;73;2017-06-30;AIK
+M;Sam;Lundholm;1994-07-01;181;69;2018-06-30;AIK
+F;Eero;Markkanen;1991-07-03;197;97;2018-11-30;AIK
+F;Henok;Goitom;1984-09-22;189;86;2015-11-30;AIK
+F;Ibrahim;Teteh-Bangura;1989-12-27;180;76;2016-06-30;AIK
+F;Kennedy;Igboananike;1989-02-08;175;70;;AIK
+F;Kwame;Karikari;1992-01-21;190;83;2016-11-30;AIK
+GK;Christoffer;Källqvist;1983-08-26;193;96;2018-11-30;BK Häcken
+GK;Dime;Jankulovski;1977-06-18;188;90;;BK Häcken
+GK;Peter;Abrahamsson;1988-07-18;190;85;2016-11-30;BK Häcken
+GK;Teodor;Söderberg;1995-02-03;185;72;;BK Häcken
+D;Björn;Anklev;1979-04-13;174;70;2016-11-30;BK Häcken
+D;David;Frölund;1979-06-04;173;73;;BK Häcken
+D;Egzon;Binaku;1995-08-27;182;74;2018-11-30;BK Häcken
+D;Emil;Wahlström;1987-03-02;183;82;2016-11-30;BK Häcken
+D;Fredrik;Björck;1979-10-22;190;83;2016-11-30;BK Häcken
+D;Kari;Arkivuo;1983-06-23;176;72;2017-11-30;BK Häcken
+D;Leonard;Zuta;1992-08-09;180;70;2018-06-30;BK Häcken
+D;Ronald;Mukiibi;1991-09-16;188;80;;BK Häcken
+D;Simon;Sandberg;1994-01-01;186;77;2016-11-30;BK Häcken
+D;Walid;Atta;1986-08-28;194;84;2018-06-30;BK Häcken
+M;Hosam;Aiesh;1995-04-04;180;72;2016-11-30;BK Häcken
+M;Ivo;Pekalski;1990-11-03;180;78;2015-11-30;BK Häcken
+M;Martin;Ericsson;1980-09-04;178;74;2016-11-30;BK Häcken
+M;Nasiru;Mohammed;1994-07-07;172;70;2016-11-30;BK Häcken
+M;Oscar;Lewicki;1992-07-14;171;68;2017-12-31;BK Häcken
+M;René;Makondele;1982-04-20;178;66;2017-11-30;BK Häcken
+M;Richard;Donkor;1996-04-02;;;;BK Häcken
+M;Samuel;Gustafson;1995-01-20;186;80;2015-11-30;BK Häcken
+M;Sebastian;Ohlsson;1992-12-31;186;82;2017-11-30;BK Häcken
+M;Simon;Gustafson;1995-01-20;185;80;2019-06-30;BK Häcken
+M;Sula;Matovu;1992-07-17;170;65;;BK Häcken
+F;Alexander;Jeremejeff;1993-10-12;190;75;;BK Häcken
+F;Augustine;Okrah;1993-09-18;;;;BK Häcken
+F;Carlos;Strandberg;1996-04-14;185;85;2019 jun;BK Häcken
+F;Gunnar;Thorvaldsson;1982-04-01;182;78;2018-11-30;BK Häcken
+F;Moestafa;El-Kabir;1988-05-10;176;77;;BK Häcken
+GK;Hampus;Nilsson;1990-07-17;190;93;2018-11-30;Djurgårdens IF
+GK;Kenneth;Høie;1979-09-11;189;93;2016-11-30;Djurgårdens IF
+D;Emil;Bergström;1993-05-19;187;87;2017-11-30;Djurgårdens IF
+D;Fredrik;Stenman;1983-06-02;187;84;2015-11-30;Djurgårdens IF
+D;Frej;Engberg;1995-05-05;183;78;;Djurgårdens IF
+D;Jakob;Glasberg;1995-07-07;187;79;2017-11-30;Djurgårdens IF
+D;Jesper;Arvidsson;1985-01-01;181;79;2018-12-31;Djurgårdens IF
+D;Mattias;Östberg;1977-08-24;189;85;2014;Djurgårdens IF
+D;Philip;Sparrdal-Mantilla;1993-08-11;186;80;2016;Djurgårdens IF
+D;Stefan;Karlsson;1988-12-15;178;77;2016-11-30;Djurgårdens IF
+D;Vytautas;Andriuskevicius;1990-10-08;188;80;2016-06-30;Djurgårdens IF
+M;Alexander;Faltsetas;1987-07-04;181;80;2016-11-30;Djurgårdens IF
+M;Andreas;Johansson;1978-07-05;181;80;;Djurgårdens IF
+M;Christian;Sivodedov;1997-11-07;173;68;2018-06-30;Djurgårdens IF
+M;Daniel;Amartey;1994-12-01;182;76;2020-06-30;Djurgårdens IF
+M;Haris;Radetinac;1985-10-28;187;78;2016-11-30;Djurgårdens IF
+M;Mark;Mayambela;1987-09-09;187;76;2016;Djurgårdens IF
+M;Martin;Broberg;1990-09-24;183;76;;Djurgårdens IF
+M;Nahir;Oyal;1990-12-17;175;69;2017-11-30;Djurgårdens IF
+M;Simon;Tibbling;1994-09-07;171;67;2019-06-30;Djurgårdens IF
+M;Xolani;Mdaki;1992-06-07;;;;Djurgårdens IF
+M;Yussif;Chibsah;1983-12-30;178;68;2017-11-30;Djurgårdens IF
+F;Aleksandar;Prijovic;1990-04-21;190;83;2015;Djurgårdens IF
+F;Amadou;Jawo;1984-09-26;175;73;2018-11-30;Djurgårdens IF
+F;Erton;Fejzullahu;1988-04-09;180;81;2018-12-31;Djurgårdens IF
+F;Philip;Hellquist;1991-05-12;184;73;2017 jun;Djurgårdens IF
+F;Sebastian;Andersson;1991-07-15;190;85;2017-11-30;Djurgårdens IF
+F;Tim;Söderström;1994-01-04;189;78;2018-11-30;Djurgårdens IF
+GK;Johan;Brattberg;1996-12-28;198;93;;Falkenbergs FF
+GK;Otto;Martler;1987-02-27;190;82;2016-11-30;Falkenbergs FF
+GK;Rasmus;Rydén;1983-03-23;187;88;2016-11-30;Falkenbergs FF
+D;Adam;Eriksson;1990-07-13;186;82;2018-11-30;Falkenbergs FF
+D;Andrés;Thorleifsson;1988-07-19;192;87;;Falkenbergs FF
+D;Daniel;Johansson;1987-07-28;185;82;2017-11-30;Falkenbergs FF
+D;Johan;Marting;1994-04-16;173;73;;Falkenbergs FF
+D;Junaid;Sait;1993-05-24;182;70;;Falkenbergs FF
+D;Per;Karlsson;1989-04-20;180;77;2017-11-30;Falkenbergs FF
+D;Rasmus;Sjöstedt;1992-02-28;182;75;2016-11-30;Falkenbergs FF
+D;Tibor;Joza;1986-08-10;173;73;2016-11-30;Falkenbergs FF
+D;Tobias;Karlsson;1989-01-14;187;85;2017-11-30;Falkenbergs FF
+M;Anton;Wede;1990-04-20;173;72;2016-11-30;Falkenbergs FF
+M;Arben;Ajdarevic;1995-04-13;189;80;2016-11-30;Falkenbergs FF
+M;Carl;Wede;1990-04-20;173;72;2017-11-30;Falkenbergs FF
+M;Carl-Oskar;Andersson;1992-04-02;189;72;;Falkenbergs FF
+M;Christoffer;Carlsson;1989-01-15;172;73;2016-11-30;Falkenbergs FF
+M;Daniel;Keat;1987-09-28;180;79;2016-11-30;Falkenbergs FF
+M;David;Svensson;1984-04-09;179;75;2018-11-30;Falkenbergs FF
+M;Felix;Johansson;1993-02-01;189;80;;Falkenbergs FF
+M;Halldor;Björnsson;1987-03-02;185;78;;Falkenbergs FF
+M;Hampus;Svensson;1994-10-23;174;68;2015-11-30;Falkenbergs FF
+M;Johan;Svahn;1988-04-01;177;76;;Falkenbergs FF
+M;Johannes;Vall;1992-10-19;183;82;2016-11-30;Falkenbergs FF
+M;Rasmus;Andersson;1993-04-17;178;75;2015-11-30;Falkenbergs FF
+F;Godsway;Donyoh;1994-10-14;179;71;2017-06-30;Falkenbergs FF
+F;Gustaf;Nilsson;1997-05-23;197;78;2016-06-30;Falkenbergs FF
+F;Matteo;Blomqvist-Zampi;1990-08-15;181;70;;Falkenbergs FF
+F;Patrik;Ingelsten;1982-01-25;178;80;;Falkenbergs FF
+F;Stefan;Rodevåg;1980-06-11;183;82;2016-11-30;Falkenbergs FF
+F;Zlatan;Krizanovic;1991-05-17;180;79;2016-11-30;Falkenbergs FF
+GK;Emil;Hedvall;1983-06-09;191;85;2016-11-30;Gefle IF
+GK;Oskar;Larsson;1994-10-05;194;92;2015-11-30;Gefle IF
+GK;Sasa;Sjanic;1986-02-18;194;83;;Gefle IF
+D;Anders;Wikström;1981-12-14;181;80;2015-11-30;Gefle IF
+D;David;Fällman;1990-02-04;187;84;2017-12-31;Gefle IF
+D;Jens;Portin;1986-09-30;188;88;2017-11-30;Gefle IF
+D;Jesper;Florén;1990-09-11;179;75;2017-11-30;Gefle IF
+D;Jonas;Olsson;1990-03-21;185;77;2015-11-30;Gefle IF
+D;Olof;Mård;1989-01-31;192;92;2018-11-30;Gefle IF
+D;Skúli;Fridgeirsson;1988-07-30;187;75;;Gefle IF
+M;Anders;Bååth;1991-04-13;186;84;2016-11-30;Gefle IF
+M;Erik;Olsson;1995-09-22;178;72;;Gefle IF
+M;Johan;Bertilsson;1988-02-15;177;68;2016-11-30;Gefle IF
+M;Jonas;Lantto;1987-05-22;169;69;2017-11-30;Gefle IF
+M;Marcus;Hansson;1990-02-12;186;83;2017;Gefle IF
+M;Oscar;Karlsson;1992-01-23;177;76;;Gefle IF
+M;Robin;Nilsson;1988-09-15;184;80;2016-11-30;Gefle IF
+M;Simon;Lundevall;1988-09-23;178;74;2017-11-30;Gefle IF
+M;Sive;Pekezela;1992-04-03;173;69;;Gefle IF
+M;Zakaria;Abdullai;1989-10-10;183;85;2015-11-30;Gefle IF
+F;Dardan;Mustafa;1992-02-05;188;85;2016-11-30;Gefle IF
+F;Dioh;Williams;1984-10-08;184;71;2016-11-30;Gefle IF
+F;Emil;Bellander;1994-01-05;193;94;;Gefle IF
+F;Jacob;Hjelte;1996-08-11;188;92;2018-11-30;Gefle IF
+F;Johan;Oremo;1986-10-24;187;81;2017-11-30;Gefle IF
+GK;Andreas;Linde;1993-07-24;196;93;;Helsingborgs IF
+GK;Daniel;Andersson;1972-12-18;188;72;2015-11-30;Helsingborgs IF
+GK;Pär;Hansson;1986-06-22;185;86;2017-06-30;Helsingborgs IF
+D;Calle;Johansson;1994-05-23;185;80;2018-11-30;Helsingborgs IF
+D;Christoffer;Andersson;1978-10-22;173;72;;Helsingborgs IF
+D;Emil;Krafth;1994-08-02;181;79;2016-06-30;Helsingborgs IF
+D;Fredrik;Widlund;1995-04-21;178;70;;Helsingborgs IF
+D;Gustav;Jarl;1995-05-28;179;74;2016-11-30;Helsingborgs IF
+D;Jere;Uronen;1994-07-13;177;69;2018-06-30;Helsingborgs IF
+D;Jesper;Björkman;1993-04-29;185;78;2016-11-30;Helsingborgs IF
+D;Loret;Sadiku;1991-07-28;180;70;;Helsingborgs IF
+D;Markus;Holgersson;1985-04-12;190;78;;Helsingborgs IF
+D;Peter;Larsson;1984-04-30;187;86;2017-11-30;Helsingborgs IF
+M;Abdulrahman;Khalili;1992-06-07;182;79;2017-06-30;Helsingborgs IF
+M;Alexander;Achinioti-Jönsson;1996-04-17;180;70;2018-11-30;Helsingborgs IF
+M;Andreas;Landgren;1989-03-17;176;74;2017-11-30;Helsingborgs IF
+M;Ardian;Gashi;1981-06-20;172;70;2017;Helsingborgs IF
+M;Daniel;Nordmark;1988-01-04;183;68;2016-11-30;Helsingborgs IF
+M;Darijan;Bojanic;1994-12-02;186;74;2018-11-30;Helsingborgs IF
+M;David;Svensson;1993-08-04;175;69;;Helsingborgs IF
+M;Elias;Andersson;1996-01-31;178;74;2017-11-30;Helsingborgs IF
+M;Emmanuel;Boateng;1994-01-17;167;70;;Helsingborgs IF
+M;Johan;Mårtensson;1989-02-16;180;75;2016-11-30;Helsingborgs IF
+M;Måns;Ekvall;1995-01-04;180;72;2016-11-30;Helsingborgs IF
+M;Mattias;Lindström;1980-04-18;182;81;2015-11-30;Helsingborgs IF
+M;Victor;Pálsson;1991-04-30;186;81;2018-11-30;Helsingborgs IF
+F;Álvaro;Santos;1980-01-30;181;88;;Helsingborgs IF
+F;Anton;Kinnander;1996-02-23;184;75;;Helsingborgs IF
+F;Arnór;Smárason;1988-09-07;184;74;2018-11-30;Helsingborgs IF
+F;David;Accam;1990-09-28;174;66;2017;Helsingborgs IF
+F;Jordan;Larsson;1997-06-27;175;69;2018-11-30;Helsingborgs IF
+F;Mikael;Dahlberg;1985-03-06;192;84;2016-11-30;Helsingborgs IF
+F;Robin;Simovic;1991-10-19;198;89;2016-12-31;Helsingborgs IF
+GK;Abbas;Hassan;1985-05-10;197;95;2016-11-30;IF Elfsborg
+GK;David;Olsson;1997-06-27;;;;IF Elfsborg
+GK;Kevin;Stuhr-Ellegaard;1983-05-23;196;93;2017-11-30;IF Elfsborg
+D;Anders;Svensson;1976-07-17;177;77;2015-11-30;IF Elfsborg
+D;Andreas;Klarström;1977-12-23;174;71;2015-11-30;IF Elfsborg
+D;Anton;Lans;1991-04-17;182;80;2017-11-30;IF Elfsborg
+D;Daniel;Mobaeck;1980-05-22;184;79;2015-11-30;IF Elfsborg
+D;Johan;Larsson;1990-05-05;181;75;2018-12-31;IF Elfsborg
+D;Jon;Jönsson;1983-07-08;183;75;2017-11-30;IF Elfsborg
+D;Sebastian;Holmén;1992-04-29;185;73;2016-11-30;IF Elfsborg
+M;Adam;Lundqvist;1994-03-20;175;65;2018-11-30;IF Elfsborg
+M;Anton;Andreasson;1993-07-26;175;75;;IF Elfsborg
+M;Arber;Zeneli;1995-02-25;176;71;2019-06-30;IF Elfsborg
+M;Henning;Hauger;1985-07-17;179;77;2019-11-30;IF Elfsborg
+M;Liridon;Gashi;1993-06-19;175;73;;IF Elfsborg
+M;Marcus;Rohdén;1991-05-11;182;76;2018-11-30;IF Elfsborg
+M;Niklas;Hult;1990-02-13;173;65;2018-06-30;IF Elfsborg
+M;Simon;Hedlund;1993-03-11;175;68;2017-11-30;IF Elfsborg
+M;Viktor;Claesson;1992-01-02;183;79;2018-11-30;IF Elfsborg
+F;Lasse;Nilsson;1982-01-03;180;71;2017-11-30;IF Elfsborg
+F;Mikkel;Beckmann;1983-10-24;183;81;;IF Elfsborg
+F;Per;Frick;1992-04-14;182;81;2016-11-30;IF Elfsborg
+F;Victor;Rotting;1993-06-09;187;86;2017-11-30;IF Elfsborg
+F;Viktor;Prodell;1988-02-29;190;86;2018-11-30;IF Elfsborg
+GK;John;Alvbåge;1982-08-10;187;90;2018-11-30;IFK Göteborg
+GK;Marcus;Sandberg;1990-11-07;191;87;2018-12-31;IFK Göteborg
+GK;Mattias;Hugosson;1974-01-24;190;88;;IFK Göteborg
+GK;Sulejmen;Sarajlic;1995-10-23;196;96;2016-11-30;IFK Göteborg
+D;Adam;Johansson;1983-02-21;182;75;2016-11-30;IFK Göteborg
+D;Billy;Nordström;1995-09-18;180;73;2016-11-30;IFK Göteborg
+D;Emil;Salomonsson;1989-04-28;182;75;2018-11-30;IFK Göteborg
+D;Hampus;Zackrisson;1994-08-24;189;85;2017-11-30;IFK Göteborg
+D;Hjalmar;Jonsson;1980-07-29;182;76;2016-11-30;IFK Göteborg
+D;Kjetil;Wæhler;1976-03-16;182;78;2015;IFK Göteborg
+D;Ludwig;Augustinsson;1994-04-21;181;76;2019-06-30;IFK Göteborg
+D;Mattias;Bjärsmyr;1986-01-03;186;84;2017-11-30;IFK Göteborg
+D;Patrick;Dyrestam;1996-03-11;196;95;2017-11-30;IFK Göteborg
+D;Philip;Haglund;1987-03-22;188;87;2016-11-30;IFK Göteborg
+M;Daniel;Sobralense;1983-02-10;173;74;2015;IFK Göteborg
+M;Darijan;Bojanic;1994-12-02;186;74;2018-11-30;IFK Göteborg
+M;Gustav;Svensson;1987-02-07;184;83;2018-12-31;IFK Göteborg
+M;Jakob;Johansson;1990-06-21;187;86;2018-06-30;IFK Göteborg
+M;Joel;Allansson;1992-11-03;174;65;2018-06-30;IFK Göteborg
+M;Karl;Bohm;1995-08-24;178;73;2015-11-30;IFK Göteborg
+M;Martin;Smedberg-Dalence;1984-05-10;187;80;2017-11-30;IFK Göteborg
+M;May;Mahlangu;1989-01-01;173;67;2015 jun;IFK Göteborg
+M;Nordin;Gerzic;1983-11-09;175;79;2018-11-30;IFK Göteborg
+M;Søren;Rieks;1987-04-07;185;75;2017-11-30;IFK Göteborg
+F;Diego;Calvo;1991-03-25;175;67;2015 dec;IFK Göteborg
+F;Gustav;Engvall;1996-04-29;185;81;2017-11-30;IFK Göteborg
+F;Kenneth;Zohore;1994-01-31;188;96;2017-06-30;IFK Göteborg
+F;Lasse;Vibe;1987-02-22;180;72;2018-06-30;IFK Göteborg
+F;Malick;Mané;1988-10-14;179;83;2017-11-30;IFK Göteborg
+F;Robin;Söder;1991-04-01;176;70;2017-06-30;IFK Göteborg
+M;Sam;Larsson;1993-04-10;179;75;2018-06-30;IFK Göteborg
+GK;Andreas;Lindberg;1980-12-14;192;88;;IFK Norrköping
+GK;David;Mitov-Nilsson;1991-01-12;190;86;2016-11-30;IFK Norrköping
+GK;Edvard;Setterberg;1995-01-16;187;82;;IFK Norrköping
+GK;Marcus;Sahlman;1985-01-02;198;87;2015-11-30;IFK Norrköping
+D;Andreas;Johansson;1982-03-10;184;72;2016-11-30;IFK Norrköping
+D;Andreas;Hadenius;1991-03-18;188;83;2017-11-30;IFK Norrköping
+D;Christopher;Telo;1989-11-04;172;70;2017-11-30;IFK Norrköping
+D;Christopher;Meneses;1990-05-02;179;80;2016-11-30;IFK Norrköping
+D;David;Boo-Wiklander;1984-10-03;180;81;2015-11-30;IFK Norrköping
+D;Edvard;Skagestad;1988-07-06;186;85;2016;IFK Norrköping
+D;Filip;Dagerstål;1997-02-01;189;74;2018-11-30;IFK Norrköping
+D;Linus;Wahlqvist;1996-11-11;183;74;2018-11-30;IFK Norrköping
+D;Marcus;Falk-Olander;1987-05-21;180;76;2016-11-30;IFK Norrköping
+D;Mathias;Florén;1976-08-11;180;73;;IFK Norrköping
+D;Morten;Skjønsberg;1983-02-12;183;81;;IFK Norrköping
+D;Nikola;Tkalcic;1989-12-03;175;70;2016-11-30;IFK Norrköping
+M;Alexander;Fransson;1994-04-02;180;74;2020-11-30;IFK Norrköping
+M;Armin;Tankovic;1990-03-22;179;76;;IFK Norrköping
+M;Arnor;Traustason;1993-04-30;182;75;2017-11-30;IFK Norrköping
+M;James;Frempong;1989-01-11;174;72;;IFK Norrköping
+M;Lars;Krogh-Gerson;1990-02-05;186;76;2017-11-30;IFK Norrköping
+M;Mirza;Halvadzic;1996-02-15;177;74;2017-11-30;IFK Norrköping
+M;Rawez;Lawan;1987-10-04;177;76;2016-11-30;IFK Norrköping
+M;Siim;Luts;1989-03-12;182;82;2014;IFK Norrköping
+F;Alhaji;Kamara;1994-04-10;180;73;2016-11-30;IFK Norrköping
+F;Christoffer;Nyman;1992-10-05;183;77;2016-11-30;IFK Norrköping
+F;Emir;Kujovic;1988-06-22;194;88;2016-11-30;IFK Norrköping
+F;Gentrit;Citaku;1996-02-25;185;76;2017-11-30;IFK Norrköping
+F;Isaac;Kiese-Thelin;1992-09-15;189;83;2019-06-30;IFK Norrköping
+GK;John;Håkansson;1998-03-28;188;87;;Kalmar FF
+GK;Lars;Cramer;1991-05-25;192;82;;Kalmar FF
+GK;Ole;Söderberg;1990-07-20;194;94;2016-11-30;Kalmar FF
+GK;Oscar;Johansson;1995-02-06;;;;Kalmar FF
+D;Emin;Nouri;1985-07-22;181;75;2018-11-30;Kalmar FF
+D;Giga;Chkheidze;1997-05-06;177;70;2016-11-30;Kalmar FF
+D;Herman;Sillerström;1996-01-22;189;75;;Kalmar FF
+D;Sebastian;Ramhorn;1996-05-03;180;78;;Kalmar FF
+D;Johan;Ramhorn;1996-05-03;178;74;;Kalmar FF
+D;Ludvig;Öhman;1991-10-04;189;82;2016-12-31;Kalmar FF
+D;Marcus;Nilsson;1988-02-26;194;80;2015-11-30;Kalmar FF
+D;Markus;Thorbjörnsson;1987-10-01;187;80;2018-11-30;Kalmar FF
+D;Mats;Solheim;1987-12-03;178;76;2017-11-30;Kalmar FF
+D;Nenad;Djordjevic;1979-08-07;183;77;2015-11-30;Kalmar FF
+D;Rasmus;Sjöstedt;1992-02-28;182;75;2016-11-30;Kalmar FF
+D;Stefan;Larsson;1983-01-21;182;78;2016-11-30;Kalmar FF
+M;Archford;Gutu;1993-08-05;179;74;2015-11-30;Kalmar FF
+M;Filip;Sachpekidis;1997-07-03;180;76;2017-11-30;Kalmar FF
+M;Herman;Hallberg;1997-05-22;180;71;2017-11-30;Kalmar FF
+M;Ismael;Silva;1994-12-01;169;68;2017-11-30;Kalmar FF
+M;Jonathan;Ring;1991-12-05;182;74;2016-11-30;Kalmar FF
+M;Melker;Hallberg;1995-10-20;180;68;2019-06-30;Kalmar FF
+M;Oskar;Engström;1997-07-22;179;75;;Kalmar FF
+M;Papa;Diouf;1989-06-22;180;71;2017-11-30;Kalmar FF
+M;Peter;Westberg;1995-09-22;185;74;2015-11-30;Kalmar FF
+M;Romario;Pereira-Sipiao;1985-08-10;173;72;2016-11-30;Kalmar FF
+M;Tobias;Eriksson;1985-03-19;178;70;2018-11-30;Kalmar FF
+M;Tor;Hovda;1989-09-24;187;76;2017-12-31;Kalmar FF
+F;César;Santin;1981-02-24;174;72;;Kalmar FF
+F;Daniel;Mendes;1981-01-18;175;71;2015;Kalmar FF
+F;David;Elm;1983-01-10;192;86;2017-11-30;Kalmar FF
+F;Måns;Söderqvist;1993-02-08;176;70;2017-11-30;Kalmar FF
+F;Melvin;Platje;1988-12-16;177;79;;Kalmar FF
+F;Pär;Ericsson;1988-07-21;183;81;2016-11-30;Kalmar FF
+F;Sebastian;Andersson;1991-07-15;190;85;2017-11-30;Kalmar FF
+GK;Robin;Olsen;1990-01-08;198;89;2019-06-30;Malmö FF
+GK;Zlatan;Azinovic;1988-01-31;182;80;2016-06-30;Malmö FF
+D;Alexander;Blomqvist;1994-08-03;185;79;2017-11-30;Malmö FF
+D;Anton;Tinnerholm;1991-02-26;176;75;2017-12-31;Malmö FF
+D;Erik;Johansson;1988-12-30;192;89;2020-06-30;Malmö FF
+D;Filip;Helander;1993-04-22;192;83;2019-06-30;Malmö FF
+D;Franz;Brorsson;1996-01-30;185;81;2018-12-31;Malmö FF
+D;Jasmin;Sudic;1990-11-24;193;87;2018-06-30;Malmö FF
+D;Johan;Hammar;1994-02-22;198;86;;Malmö FF
+D;Mahmut;Özen;1988-09-01;180;74;2017-06-30;Malmö FF
+D;Markus;Halsti;1984-03-19;185;85;;Malmö FF
+D;Matias;Concha;1980-03-31;180;82;;Malmö FF
+D;Miiko;Albornoz;1990-11-30;180;80;2017-06-30;Malmö FF
+D;Pa;Konate;1994-04-25;178;72;2017-12-31;Malmö FF
+D;Pontus;Jansson;1991-02-13;194;92;2018-06-30;Malmö FF
+D;Ricardo;Ferreira;1984-09-09;168;73;;Malmö FF
+M;Amin;Nazari;1993-04-26;180;75;2017-11-30;Malmö FF
+M;Emil;Forsberg;1991-10-23;179;78;2018-06-30;Malmö FF
+M;Enock;Adu;1990-09-14;178;67;2017-12-31;Malmö FF
+M;Erdal;Rakip;1996-02-13;179;73;2017-12-31;Malmö FF
+M;Guillermo;Molins;1988-09-26;186;83;2016-06-30;Malmö FF
+M;Magnus;Eriksson;1990-04-08;179;82;2019-06-30;Malmö FF
+M;Petar;Petrovic;1995-09-15;178;70;2017-11-30;Malmö FF
+M;Piotr;Johansson;1995-02-28;185;80;2018-12-31;Malmö FF
+M;Simon;Kroon;1993-06-16;183;73;2018-06-30;Malmö FF
+M;Simon;Thern;1992-09-18;176;67;2018-06-30;Malmö FF
+M;Pawel;Cibicki;;;;;Malmö FF
+M;Victor;Wernersson;1995-07-06;180;69;2017-11-30;Malmö FF
+F;Agon;Mehmeti;1989-11-20;184;79;2018-12-31;Malmö FF
+F;Deniz;Hümmet;1996-09-13;187;80;2018-06-30;Malmö FF
+F;Isaac;Kiese-Thelin;1992-09-15;189;83;2019-06-30;Malmö FF
+F;Markus;Rosenberg;1982-09-27;184;81;2017-12-31;Malmö FF
+GK;Jacob;Rinne;1993-06-20;188;86;2017-11-30;Örebro SK
+GK;Ludwig;Bergström;1983-08-22;193;95;;Örebro SK
+GK;Oscar;Jansson;1990-12-23;187;82;2017-11-30;Örebro SK
+D;Anton;Westerlund;1995-02-26;186;85;2016-11-30;Örebro SK
+D;Ayanda;Nkili;1990-10-09;184;74;;Örebro SK
+D;Boris;Lumbana;1991-06-19;186;84;2016-11-30;Örebro SK
+D;Carl;Ekstrand;1996-06-17;190;76;;Örebro SK
+D;Christoffer;Wiktorsson;1989-03-22;182;88;;Örebro SK
+D;Daniel;Björnkvist;1989-01-08;178;77;2016-11-30;Örebro SK
+D;Erik;Moberg;1986-07-05;186;81;2016-11-30;Örebro SK
+D;Ilir;Berisha;1991-06-25;185;77;;Örebro SK
+D;Magnus;Wikström;1977-12-07;195;91;;Örebro SK
+D;Patrik;Haginge;1985-04-02;183;75;2017-11-30;Örebro SK
+D;Samuel;Mensah;1989-05-19;175;74;;Örebro SK
+D;Tobias;Nilsson;1986-02-20;186;82;2016-11-30+1;Örebro SK
+M;Ahmed;Yasin;1991-04-21;185;77;2018-11-30;Örebro SK
+M;Daniel;Sobralense;1983-02-10;173;74;2015;Örebro SK
+M;Daniel;Gustavsson;1990-08-29;178;73;2016-11-30;Örebro SK
+M;Daniel;Nordmark;1988-01-04;183;68;2016-11-30;Örebro SK
+M;Karl;Holmberg;1993-03-03;181;64;;Örebro SK
+M;Lukman;Murad;1996-06-05;169;62;2016-11-30;Örebro SK
+M;Mohammed;Saeid;1990-12-24;170;64;;Örebro SK
+M;Nordin;Gerzic;1983-11-09;175;79;2018-11-30;Örebro SK
+M;Robert;Åhman-Persson;1987-03-26;188;84;;Örebro SK
+F;Alhassan;Kamara;1993-01-13;180;82;2016-11-30;Örebro SK
+F;Christer;Lipovac;1996-03-07;180;79;2015-11-30;Örebro SK
+F;Marcus;Pode;1986-03-27;186;77;;Örebro SK
+F;Shpetim;Hasani;1982-08-10;183;84;2016-11-30;Örebro SK
+F;William;Atashkadeh;1992-04-12;181;80;2017-11-30;Örebro SK
