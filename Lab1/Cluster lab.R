@@ -3,7 +3,7 @@ library(ggplot2)
 library(gridExtra)
 library(GGally)
 
-food <- read.arff("C:\\Users\\Gustav\\Desktop\\Data Mining - Master\\food.arff")
+food <- read.arff("C:\\Users\\Gustav\\Documents\\Data-Mining-course\\Lab1\\food.arff")
 
 pairs(food[, 2:6])
 ggpairs(food[, 2:6], title = "Scatterplot matrix")
@@ -22,35 +22,35 @@ Kmeans2 <- SimpleKMeans(foodVars, Weka_control(N=2))
 Kmeans4 <- SimpleKMeans(foodVars, Weka_control(N=4))
 #Graphs 
 {
-means2Var12 <- ggplot(food, aes(x=Energy, y=Protein)) + geom_point(aes(col=Kmeans2$class_ids),size=5) + theme(legend.position="none") +
+means2Var12 <- ggplot(food, aes(x=Energy, y=Protein)) + geom_point(aes(col=Kmeans2$class_ids),size=3) + theme(legend.position="none") +
   ggtitle("Energy vs Protein")
-means2Var13 <- ggplot(food, aes(x=Energy, y=Fat)) + geom_point(aes(col=Kmeans2$class_ids),size=5)+ theme(legend.position="none")+
+means2Var13 <- ggplot(food, aes(x=Energy, y=Fat)) + geom_point(aes(col=Kmeans2$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Energy vs Fat")
-means2Var14 <- ggplot(food, aes(x=Energy, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=5)+ theme(legend.position="none")+
+means2Var14 <- ggplot(food, aes(x=Energy, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Energy vs Iron")
-means2Var23 <- ggplot(food, aes(x=Protein, y=Fat)) + geom_point(aes(col=Kmeans2$class_ids),size=5)+ theme(legend.position="none")+
+means2Var23 <- ggplot(food, aes(x=Protein, y=Fat)) + geom_point(aes(col=Kmeans2$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Protein vs Fat")
-means2Var24 <- ggplot(food, aes(x=Protein, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=5)+ theme(legend.position="none")+
+means2Var24 <- ggplot(food, aes(x=Protein, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Protein vs Iron")
-means2Var34 <- ggplot(food, aes(x=Fat, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=5)+ theme(legend.position="none")+
+means2Var34 <- ggplot(food, aes(x=Fat, y=Iron)) + geom_point(aes(col=Kmeans2$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Fat vs Iron")
 grid.arrange(means2Var12, means2Var13,means2Var14,means2Var23,means2Var24,means2Var34, ncol=2)
 
-means4Var12 <- ggplot(food, aes(x=Energy, y=Protein)) + geom_point(aes(col=Kmeans4$class_ids),size=5) + theme(legend.position="none") +
+means4Var12 <- ggplot(food, aes(x=Energy, y=Protein)) + geom_point(aes(col=Kmeans4$class_ids),size=3) + theme(legend.position="none") +
   ggtitle("Energy vs Protein") +  scale_colour_gradientn(colours = rainbow(4))
-means4Var13 <- ggplot(food, aes(x=Energy, y=Fat)) + geom_point(aes(col=Kmeans4$class_ids),size=5)+ theme(legend.position="none")+
+means4Var13 <- ggplot(food, aes(x=Energy, y=Fat)) + geom_point(aes(col=Kmeans4$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Energy vs Fat")+  scale_colour_gradientn(colours = rainbow(4))
-means4Var14 <- ggplot(food, aes(x=Energy, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=5)+ theme(legend.position="none")+
+means4Var14 <- ggplot(food, aes(x=Energy, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Energy vs Iron")+  scale_colour_gradientn(colours = rainbow(4))
-means4Var23 <- ggplot(food, aes(x=Protein, y=Fat)) + geom_point(aes(col=Kmeans4$class_ids),size=5)+ theme(legend.position="none")+
+means4Var23 <- ggplot(food, aes(x=Protein, y=Fat)) + geom_point(aes(col=Kmeans4$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Protein vs Fat")+  scale_colour_gradientn(colours = rainbow(4))
-means4Var24 <- ggplot(food, aes(x=Protein, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=5)+ theme(legend.position="none")+
+means4Var24 <- ggplot(food, aes(x=Protein, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Protein vs Iron")+  scale_colour_gradientn(colours = rainbow(4))
-means4Var34 <- ggplot(food, aes(x=Fat, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=5)+ theme(legend.position="none")+
+means4Var34 <- ggplot(food, aes(x=Fat, y=Iron)) + geom_point(aes(col=Kmeans4$class_ids),size=3)+ theme(legend.position="none")+
   ggtitle("Fat vs Iron")+  scale_colour_gradientn(colours = rainbow(4))
 grid.arrange(means4Var12, means4Var13,means4Var14,means4Var23,means4Var24,means4Var34, ncol=2)
 }
-
+FoodClass <- data.frame(food, class=Kmeans4$class_ids)
 
 # Do the same thing, but for a different seed
 
