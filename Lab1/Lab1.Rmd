@@ -6,7 +6,7 @@ output: pdf_document
 ---
 
 # Simple K-means
-I start with making a scatterplot which includes all variables except *names*. The latter is excluded because it just gives the names of the respective products. An alternative could have been to create a categorical variable since the names of the products indicates quite well what kind of food it contains. However, K-means is not a good algorithm for categorical data so the variable would still not have been so interesting to include in this particular analysis.  
+I start with making a scatterplot matrix which includes all variables except *names*. The latter is excluded because it just gives the names of the respective products. An alternative could have been to create a categorical variable since the names of the products indicates quite well what kind of food it contains. However, K-means is not a good algorithm for categorical data so the variable would still not have been so interesting to include in this particular analysis.  
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(RWeka)
 library(ggplot2)
@@ -18,7 +18,7 @@ ggpairs(food[, 2:6], title = "Scatterplot matrix",axisLabels="internal",upper = 
 foodVars <- food[, c(2:4, 6)]
 ```
 The chosen attributes are *Energy*, *Protein*, *Fat* and *Iron*. 
-This is motivated by the patterns visualised in the scatterplot. My conclusion is that all of the variables but *calcium* seem to be interesting to include. For *calcium* most of the values are very close to each other apart from some outliers. It is therefore interpreted as not being the most interesting variable to include. The other variables have values that are more spread out in different groups which might be possible to investigate closer with a cluster analysis.    
+This is motivated by the patterns visualised in the scatterplot matrix. My conclusion is that all of the variables but *calcium* seem to be interesting to include. For *calcium* most of the values are very close to each other apart from some outliers. It is therefore interpreted as not being the most interesting variable to include. The other variables have values that are more spread out in different groups and these groups might be possible to investigate closer with a cluster analysis.    
 
 \pagebreak  
   
@@ -26,7 +26,7 @@ This is motivated by the patterns visualised in the scatterplot. My conclusion i
 The initial clusters centroids are held fixed with the seed value *10* and two different cluster analysis are performed. In the first case the data points are divided into two clusters and in the second case into four different clusters.  
 
 ### Two clusters
-The number of iterations is two and the within cluster *SSE* is 3.99. The first cluster contains *1/3* of the data points and the second cluster the remainder of the data points. How the initial starting points has changed can be seen in the output below. 
+The number of iterations is two and the within cluster *SSE* is 3.99. The first cluster contains *1/3* of the data points and the second cluster the remainder of the data points. How the initial cluster centroids has changed can be seen in the output below. 
 
 ```{r, echo=FALSE}
 Kmeans2 <- SimpleKMeans(foodVars, Weka_control(N=2))
@@ -55,10 +55,10 @@ grid.arrange(means2Var12, means2Var13,means2Var14,means2Var23,means2Var24,means2
 In general are the clusters very well separeted.
 The first cluster, light blue points, includes food with lower levels of energy and fat and the second cluster, dark blue points, includes food with high levels of energy and fat. 
 The clusters are in general well separated and dissimilar. They only overlap in the plot *"Protein vs Iron"*. 
-The problem with the clusters is that they are too general. Even though the two clusters are rather well separated the members inside the clusters are not always very similar. It could therefore be interesting to examine if better clusters are given if the *K* is increased from two to four. 
+The problem with the clusters is that they are too general. Even though the two clusters are rather well separated the members inside the clusters are not always very similar. It could therefore be interesting to examine if better clusters are given if *K* is increased from two to four. 
 
 ### Four clusters
-For the clustering with *K=4* the number of iterations is six and the *SSE* is 1.56. Information about gow many of the points that are clustered into each cluster and how the initial staring points has changed is given in the output below.  
+For the clustering with *K=4* the number of iterations is six and the *SSE* is 1.56. Information about how many of the points that are clustered into each cluster and how the initial cluster centroids has changed is given in the output below.  
 ```{r, echo=FALSE}
 Kmeans4 <- SimpleKMeans(foodVars, Weka_control(N=4))
 Kmeans4
@@ -92,7 +92,7 @@ The seed is changed to the value *28*. This means that the starting centroids wi
   
 ### Two clusters
 For the new *SimpleKMeans* model with *K=2* the algorithm needed six iterations before it reached the local minima. The within cluster *SSE* is 3.99.
-The clusters found are the exact same clusters as those for the seed value *10*. The only difference is that for the new set of initial centroids six iterations where needed instead of two before the local minima was found. 
+The clusters found are the exact same clusters as those for the seed value *10*. The only difference is that for the new set of initial cluster centroids six iterations where needed instead of two before the local minima was found. 
 ```{r,echo=FALSE}
 Kmeans2v2 <- SimpleKMeans(foodVars, Weka_control(N=2, S=28))
 Kmeans2v2
@@ -154,29 +154,32 @@ Of the three different clusters presented above I have chosen to examine the clu
 \textcolor{red}{¤} The red cluster contains food with a high amount of energy and fat. It represents typical meat products like pork, beef and ham.   
 \textcolor{blue}{¤} The turquoise cluster contains food with a very low amount of protein, energy and fat and a high amount of iron. It seem to represent food containing clams since the two products in the cluster are *canned clams* and *raw clams*.   
 \textcolor{green}{¤} The green cluster contains food with a low amount of energy, fat and iron. The foods that has these characteristics are different fish and seafood products and chicken, so this is a seafood and chicken cluster.  
-\textcolor{blue}{¤} The purple cluster is dissimilar to the others by having a moderately low amount of fat and energy and a moderately high amount of iron. It represents different more atypical meat products like for example beef heart, beef tongue and veal cutlet.       
+\textcolor{blue}{¤} The purple cluster is dissimilar to the others by having a moderately low amount of fat and energy and a moderately high amount of iron. It represents some more uncommon meat products like for example beef heart, beef tongue and veal cutlet.       
 
 
 # MakeDensityBasedClusters
-The objective here is to investigate the effect of different values for the setting *min standard deviation* when a *MakeDensityBasedClusters* clustering is performed. As will be shown below it is discoverad that a high value for the *min standard deviation* setting results in fewer clusters. Two examples of *MakeDensityBasedClusters* clustering are presented where the min standard deviation is set to five in the first example and to 100 in the second example.  
+The objective here is to investigate the effect of different values for the setting *min standard deviation* when a *MakeDensityBasedClusters* clustering is performed. Two examples of *MakeDensityBasedClusters* clustering on the *SimpleKMeans* cluster with seed *10* and *K=4* are presented where the min standard deviation is set to five in the first example and to 100 in the second example.  
 Up to this part of the lab have I used **R** to make the computations and visualizations. However, the *MakeDensityBasedClusters* function is not available in the *Weka* **R** package so from here on have I used *Weka* instead of **R**. 
 
 ## Min standard deviation = 5
-Still four clusters and only small changes to the initial ones. 
+The number of clusters is unchanged and the number of objects in each cluster is similar, but the way the objects are assigned to the respective clusters have changed a little bit.
 
 ![alt text](C:/Users/Gustav/Documents/Data-Mining-course/Lab1/std5.JPG)  
 
-A plot over *Energy* versus *Protein* for the new clusters.  
+That some objects, as mentioned above, has changed clusters is visualised with a plot over *Energy* versus *Protein* for the new clusters.  
 \includegraphics[width=250pt]{C:/Users/Gustav/Documents/Data-Mining-course/Lab1/EnerProtStd5.jpg}
 
-Compared to the *SimpleKMeans* clusters with *K=4* there is no overlapping when looking at *Energy* versus *Protein*. In both earlier clusterings there were some overlapping.  
+Compared to the *SimpleKMeans* cluster with *K=4* and seed *10* there is no overlapping when looking at *Energy* versus *Protein*. In the earlier clustering there were some overlapping objects who were very similar to objects not belonging to its cluster.  
 
 ## Min standard deviation = 100
-The four initial clusters are merged to together and the clustering do now consists of two different clusters. The result is a clustering that is rather similiar to the *SimpleKMeans* with *K=2* that was presented earlier in the report. 
+With this setting the cluster *0* is unchanged and the clusters *1*, *2* and *3* are merged together to one cluster. The result of this is a clustering that consists of two different clusters.
 
 ![alt text](C:/Users/Gustav/Documents/Data-Mining-course/Lab1/std100.JPG)
 
-Again is a plot over *Energy* versus *Protein* used for visualising  
+Again is a plot over *Energy* versus *Protein* used for visualising the new clustering.   
 \includegraphics[width=250pt]{C:/Users/Gustav/Documents/Data-Mining-course/Lab1/EnerProtStd100.jpg}  
-That the clusters has been merged is also the discovering of highest interest when the clusters are visualized. 
 
+The result is a clustering that is rather similiar, but not exactly the same, to the *SimpleKMeans* with *K=2* that was presented earlier in the report. 
+
+
+As the results above has shown it is discoverad that a high value for the *min standard deviation* setting results in fewer clusters. That is a logical interpretation of this setting since a high standard deviation means that the objects within a cluster are allowed to be less similar. In the reverse case is it also logical that a low value for the min standard deviation gives more and smaller clusters where the objects inside each cluster are more similar. 
