@@ -1,7 +1,7 @@
 ---
 title: "Data Mining - Lab 1 - Cluster Analysis"
 author: "Gustav Sternelöv"
-date: "3 februari 2016"
+date: "February, 3, 2016"
 output: pdf_document
 ---
 
@@ -23,7 +23,7 @@ This is motivated by the patterns visualised in the scatterplot matrix. My concl
 \pagebreak  
   
 ## Seed 10  
-The initial clusters centroids are held fixed with the seed value *10* and two different cluster analysis are performed. In the first case the data points are divided into two clusters and in the second case into four different clusters.  
+The initial clusters centroids are held fixed with the seed value *10* and two different cluster analysis are performed. In the first case are the data points divided into two clusters and in the second case into four different clusters.  
 
 ### Two clusters
 The number of iterations is two and the within cluster *SSE* is 3.99. The first cluster contains *1/3* of the data points and the second cluster the remainder of the data points. How the initial cluster centroids has changed can be seen in the output below. 
@@ -52,10 +52,8 @@ grid.arrange(means2Var12, means2Var13,means2Var14,means2Var23,means2Var24,means2
 }
 ```
 
-In general are the clusters very well separeted.
-The first cluster, light blue points, includes food with lower levels of energy and fat and the second cluster, dark blue points, includes food with high levels of energy and fat. 
-The clusters are in general well separated and dissimilar. They only overlap in the plot *"Protein vs Iron"*. 
-The problem with the clusters is that they are too general. Even though the two clusters are rather well separated the members inside the clusters are not always very similar. It could therefore be interesting to examine if better clusters are given if *K* is increased from two to four. 
+In general are the clusters very well separeted and dissimilar.The first cluster, light blue points, includes food with lower levels of energy and fat and the second cluster, dark blue points, includes food with high levels of energy and fat.  
+That the clusters only overlap in one of the plots, *"Protein vs Iron"*, shows that they are well separated and dissimilar. The problem with the clusters is instead that they are too general. Even though the two clusters are well separated the members inside the clusters are not always very similar. It could therefore be interesting to examine if better clusters are given if *K* is increased from two to four. 
 
 ### Four clusters
 For the clustering with *K=4* the number of iterations is six and the *SSE* is 1.56. Information about how many of the points that are clustered into each cluster and how the initial cluster centroids has changed is given in the output below.  
@@ -92,7 +90,7 @@ The seed is changed to the value *28*. This means that the starting centroids wi
   
 ### Two clusters
 For the new *SimpleKMeans* model with *K=2* the algorithm needed six iterations before it reached the local minima. The within cluster *SSE* is 3.99.
-The clusters found are the exact same clusters as those for the seed value *10*. The only difference is that for the new set of initial cluster centroids six iterations where needed instead of two before the local minima was found. 
+The clusters found are the exact same clusters as those for the seed value *10*. The only difference is that for the new set of initial cluster centroids six iterations were needed instead of two before the local minima was found. 
 ```{r,echo=FALSE}
 Kmeans2v2 <- SimpleKMeans(foodVars, Weka_control(N=2, S=28))
 Kmeans2v2
