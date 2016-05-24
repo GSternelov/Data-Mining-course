@@ -49,7 +49,7 @@ ggplot(PlayerMeltDataPL[706:940,], aes(variable, Player)) + geom_tile(aes(fill =
 # clustering 
 ClusterData <- Playerdata[,-c(1:4, 52)]
 ClusterData <- data.frame(lapply(ClusterData, function(x) scale(x,
-                           center = FALSE, scale = TRUE)))
+                           center = TRUE, scale = TRUE)))
 XMeans(ClusterData)
 
 # Simple K-means
@@ -61,6 +61,7 @@ Kmeans4 <- SimpleKMeans(ClusterData, Weka_control(N=4, S=311015))
 ClusterData$KM4 <- Kmeans4$class_ids
 Kmeans5 <- SimpleKMeans(ClusterData, Weka_control(N=5, S=311015))
 ClusterData$KM5 <- Kmeans5$class_ids
+
 
 
 # Want to see the characteristics for each cluster and compare them
