@@ -1,76 +1,139 @@
 ---
-title: "Game Performance - Forwards - Elite European Football leagues"
+title: Clustering of forwards based on game performance in the elite European football
+  leagues
 author: "Gustav Sternelöv"
 date: "28 april 2016"
-output: pdf_document
+output: word_document
 ---
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(XLConnect)
+library(plyr); library(dplyr)
+library(reshape2)
+library(ggplot2)
+library(grid)
+library(gridExtra)
+wb2 = loadWorkbook("C:/Users/Gustav/Documents/Data-Mining-course/Project/ProjectDataNew.xlsx")
+Playerdata = readWorksheet(wb2, sheet = "Blad1", header = TRUE)
+ClusterData2 <- Playerdata[,-c(1:4)]
+ClusterData2 <- data.frame(lapply(ClusterData2, function(x) scale(x,  center = TRUE, scale = TRUE)))
+twssFrame <- data.frame(twss=0, varExp = 0)
+for(i in 1:10){
+  set.seed(910814)
+  km <- kmeans(ClusterData2,centers = i, iter.max = 100)
+  twssFrame[i,1] <- km$tot.withinss
+  twssFrame[i,2] <- km$betweenss / km$totss
+}
+```
 
-# Introduction
-The area of study that the report will cover is how clustering of football players can be conducted. To narrow down the problem a little bit further only the football players who plays as forwards has been included in the study. Hence, the main aim with the report is to investigate what types of clusters forwards from the top European football leagues can be clustered into.  
-
-The top European football leagues are the English Premier League, German Bundesliga, Italian Serie A and Spanish La Liga. In the world of football it is a well-known fact that these leagues are the strongest and it is also stated in a more official way by the UEFA ranking of the European leagues [1]. During the 2015-16 season a total of 181 players from these leagues had playing time as forwards corresponding to at least six full games. Data for 47 different variables (more about the data set in the background chapter) is collected for each player and the amount of variables makes it hard to just by the eye detect and group similar players together.  
-
-This difficulty, to find players which are similar, is a constantly ongoing problem for football clubs all over the world. How to replace your star player when he leaves? In the summer of 2014 Luis Suarez joined FC Barcelona from Liverpool leaving the latter club with the hard task of replacing their forward star [2]. The British club signed the Italian striker Mario Balotelli to cover up for the loss of Suarez, but he failed miserably and the signing of Balotelli has been heavily criticized [3]. This summer a similar case is on or hands as Zlatan Ibrahimović will leave PSG at the end of the season. How the Frenchman’s are going to replace Ibrahimović will be one of the hottest topics this summer [4].  
-
-In many cases it is reasonable to think that the clubs want to replace the forward that leaves with a similar forward. To find a forward that is similar to Suarez or Ibrahimović is of course always going to be very difficult, but perhaps you at least want to find someone who takes a similar number of shots per game or creates goal opportunities’ for his teammates at a similar rate. Here is where the use of Data Mining techniques, and especially clustering techniques, becomes interesting.  
-
-Earlier studies in which football players has been clustered is quite rare. However, the article published on the blog pena.lt/y is one example of this [5]. In this article the author clusters players playing on all possible positions by using principle components and k-means. Principle components is used for reducing the dimensionality since the amount of variables is high. The k-means algorithm splits the players into five different groups and the given results are not very surprising. Goalkeepers are in one cluster, defenders in another and so on. The article does not examine any further if, for example, the group of midfielders can be divided into any subgroups of midfielders.
-
-
-
-# Introduction
-Among all the football leagues in the world are the top european football leagues the most competitive. To these exclusive group of leagues belongs the top four leagues on the UEFA ranking [*Source*], the english Premier League, german Bundesliga, italian Serie A and spanish La Liga. The most expensive and wanted players in all fotball teams, but especially in the top teams, are the forwards. Football is all about winning matches and scoring goals, and the main role of a forward is to score goals. It has therefore always been a bit of a mystery around the forwards, why are just them so good at scoring goals?
-
-Compared to other sports is not Football the most complex sports in terms of rules and the basics of the sport is easy to understand. However, regarding the amount of possible situations and events that can occur during a game is football a sport with high complexity. A player can take many different roles (central defender, winger, forward etc) and each role can be executed in several different ways depending on formation, tactics and so forth. For example the forward role is widely thought to be executed very different depending on both the tactics/formation used by the team, but also depending on the player. A tall player is often thougt to be best used as a target man and a small and fast player more lika a runner and goalscorer. 
-
-Traditionally is the main statistic used for assessing a forwards performance's the number of goals he scores. During recent years has the role of the forward changed a bit and its not longer that obvious what the main indicator should be for judging the performance of the forwards. Perhaps goals still is the most important contribution for a forward to the team, but as the new forward types as the *false nine* has been introduced the defintion of what a striker is definitely has become broader.  
-
-The aim with this paper is to examine if game statistics can be used for labeling the strikers in the european top leagues. If different types of strikers can be found or if it is difference between good and bad strikers that will form the different clusters. 
-
-Of interest is also the assess what that is the profile of each cluster. How can a forward in each cluster be defined, regardless if the clustering groups players after how good they are or after which type of forward they are. 
-
-The objective with the paper then is to, using clustering methods, investigate how many different types of forwards that can be found. Apart from goals and number of shots is also variables regarding key passes, dribbles, headers, lost balls and many more included. This because what is stated above, the role of the forward in the modern football is much more than just scoring goals. For different types of forwards it might be that case that completely different contributions to the team is important.
-
-[**Sources!**]
-
-# Background
-
-## Former study
-Basketball players article  
-
-Uses actions per game for clustering basketball players into different groups of player performance.  
-Finds seven different profiles and presents the mean value and standard deviation for each profile and variable.  
-The all-star players in kind of the same clusters. All of them in three of the seven clusters
-
-Statsbomb, the per 90 minutes metric
-
-That study is the inspiration to the aim of this study, if football players can be categorized into different groups. More narrowly, how and if forwards can be grouped into different types of forwards.  
-Will the clustering find different types of forwards or will it cluster the forwards in good or bad after how good they are.  
-Do have a lot of variables, which of them will prove to be important?
-
-## Types of strikers
-
-## Data and variables
-In this study is game statistics uesd for 47 different variables. No positional tracking data or such. The metrics per 90 is used because it is more interesting to cluster the forwards after what they contribute with on average to the team during 90 minutes rather than the total statistics for the last season, not taking into respect the number of minutes played. 
-
-Excludes the number of 90s, is not a characteristic that says anything relevant about the players profile. 
-
-Four different types of statistics, you could say. Three big categories which are shots, goals and key passes, and a fourth containing other statistics(aerials, dribbles, fouls, offsieds, lost balls)
-
-# Methodolgy
-
-## Dataset
-
-## Algorithms
-K-means, number of strikers decided after what that can be reasonable and something more? Is the goal to minimize the sum of squares within the clusters? Should also test a number of different seeds?
-
-Hierarchical clustering  
-Motivate the choice of hierarchical clustering and the choice of link. Test a few different links perhaps, in that case hae to motivate the choice. Where to cut the tree and how to choose link?
 
 # Results
+## Number of clusters 
+The *k* in the k-means algorithm is decided by looking at how the total within cluster sum of squares decreases at the number of clusters increases.  
+
+```{r, echo=FALSE, fig.width=6, fig.height=3.5}
+ggplot(twssFrame, aes(y=twss, x=1:nrow(twssFrame))) + geom_line(col="darkorange",size=1.05) + geom_point(col="blue", size=3) +
+  theme_bw() + scale_x_continuous(breaks=seq(1,10,1)) + xlab("Number of clusters") + 
+  ylab("Total within-cluster sum of squares") + ggtitle("Scree plot - The Elbow method") + 
+  geom_vline(xintercept = 5,linetype = 2)
+```   
+
+No evident elbow can be seen in the plot but that the improvement lowers as the number of clusters increases is clear. A *k* equal to either four or five is interpreted as being reasonable as the s´difference between five and six clusters is quite small. The difference between four and five clusters on the other hand is slightly clealer so a *k* is set to 5. 
+
+## The clusters
+The size of the respective clusters are relatively even except for cluster two which only has nine players.  
+```{r, echo=FALSE}
+set.seed(12345)
+km5 <- kmeans(ClusterData2,centers = 5, iter.max = 100)
+ClusterData2$KM5 <- km5$cluster
+table(ClusterData2$KM5)
+```
+
+
+The five different clusters are compared by one category at the time. First, how the groups differs for the goal variables is presented and then they are compared given the variables in the categories shots, key passes and other. 
+
+### Goals
+The average contribution from the players in the respective clusters is compared with the visulaizations below. For each shot metric is the average number computed and represented with a bar in the graph.  
+```{r, echo=FALSE, fig.width=8, fig.height=5}
+Playerdata2 <- Playerdata[,-c(1:4)]
+Playerdata2$KM5 <- km5$cluster
+KM5.m <- data.frame(Playerdata2 %>%
+                      group_by(KM5) %>%
+                      summarise_each(funs(mean(., na.rm=TRUE)),-KM5))
+KM5.m <- melt(KM5.m, id.vars="KM5")
+KM5.m$KM5 <- as.factor(KM5.m$KM5)
+KM5.m <- KM5.m %>% mutate(variable = factor(variable, levels = rev(levels(variable))))
+KM5.m <- KM5.m %>% mutate(KM5 = factor(KM5, levels = rev(levels(KM5))))
+
+plots <- function(Data){
+  ggplot(Data,aes(x = variable, y = value, fill = KM5, group=KM5)) + theme_bw() + 
+    geom_bar(stat="identity", position="dodge") + scale_fill_manual(values=c("indianred","royalblue","darkorange",
+       "darkgrey","springgreen4"), name="Cluster") + coord_flip() + theme(legend.position="bottom") + xlab("") +ylab("Average per cluster") + guides(fill = guide_legend(reverse=T))
+}
+g_legend<-function(a.gplot){
+  tmp <- ggplot_gtable(ggplot_build(a.gplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)}
+
+Goals1 <- plots(KM5.m[71:100,])
+Goals2 <- plots(KM5.m[101:125,])
+legend<-g_legend(Goals2)
+grid.arrange(arrangeGrob(Goals1 + theme(legend.position="none"), Goals2 + theme(legend.position="none"),ncol=2),
+             legend, nrow=2,heights=c(10, 1),top=textGrob("Goal metrics",gp=gpar(fontsize=18,font=3)))
+```  
+
+Cluster number 2, the grey one, includes the players that scores the most goals per 90 minutes and the average number is just below one. Cluster 1, the green, comes next and thereafter follows cluster 5, the red, and cluster 3, the orange. The lowest number of goals per 90 minutes has the players in cluster 4, the blue one. For most of the metrics can the same order and relative difference between the clusters be observed. However, deviations from that pattern can be seen for a few metrics. Players that are clustered into the orange cluster very seldom scores in the six-yard box. Instead, they score relatively often with shots from outside the box. Another exception can be seen for the players in the red cluster since a notably big part of their goals are headed.   
+
+
+### Shots
+  
+```{r, echo=FALSE, fig.width=8, fig.height=5}
+shots1 <- plots(KM5.m[1:35,])
+shots2 <- plots(KM5.m[36:70,])
+legend<-g_legend(shots2)
+
+grid.arrange(arrangeGrob(shots1 + theme(legend.position="none"), shots2 + theme(legend.position="none"),ncol=2),
+             legend, nrow=2,heights=c(10, 1),top=textGrob("Shot metrics",gp=gpar(fontsize=18,font=3)))
+```
+
+The forwards in the grey cluster has the highest amount of shots per 90 minutes played. Thereafter follows again the green, orange and red cluster and it is really close between the averages of these clusters. The blue cluster has the lowest average number of shots. The metrics for which this pattern cannot be seen is Out-of box shots and headed shots. In average does the players in the orange cluster take a lot of shots from outside the box and the players in the red cluster has quite many headed shots per 90 minutes. The general pattern for the green and blue cluster is similar to the pattern for the grey cluster, with the exception that their average number is lower.  
+
+
+### Key passes
+
+```{r, echo=FALSE, fig.width=8, fig.height=5}
+Passes1 <- plots(KM5.m[166:185,])
+Passes2 <- plots(KM5.m[186:205,])
+legend<-g_legend(Passes2)
+grid.arrange(arrangeGrob(Passes1 + theme(legend.position="none"), Passes2 + theme(legend.position="none"),ncol=2),
+             legend, nrow=2,heights=c(10, 1),top=textGrob("Key pass metrics",gp=gpar(fontsize=18,font=3)))
+```  
+The average number of key passes is by margin highest for the orange cluster. Between the other clusters is it very even. None of the averages for the other metrics give any especially notable information apart from that the highest average is found for the orange cluster. 
+
+
+### Other
+
+```{r, echo=FALSE, fig.width=8, fig.height=5}
+other1 <- plots(KM5.m[126:150,])
+other2 <- plots(KM5.m[c(151:165,206:220),])
+legend<-g_legend(other2)
+grid.arrange(arrangeGrob(other1 + theme(legend.position="none"), other2 + theme(legend.position="none"),ncol=2),
+             legend, nrow=2,heights=c(10, 1),top=textGrob("Other metrics",gp=gpar(fontsize=18,font=3)))
+
+```
+
+
+## Lewandowski's replacement
+
+Lewandowski is in cluster two, the cluster with only nine players in total. Exclusive group of players who on average scores around one goal per game and takes 4-5 shots per game. 
+A bit more spread out for the key passes. The big common factor is the number of chanses these players creates for themselves and how well they converts the chanses into goals.  
+
+```{r, echo=FALSE}
+Playerdata$Cluster <- km5$cluster
+data.frame(Players=subset(Playerdata$Player, Playerdata$Cluster == 2), Goals90=subset(Playerdata$Goals, Playerdata$Cluster == 2), Shots90=subset(Playerdata$Shots, Playerdata$Cluster == 2), KeyPasses90=subset(Playerdata$Total.key.passes, Playerdata$Cluster == 2))
+
+```
 
 
 # Discussion
-
-
 
